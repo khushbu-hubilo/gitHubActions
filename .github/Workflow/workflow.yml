@@ -1,0 +1,16 @@
+name: hello world
+
+on:
+  push:
+    branches: 'main'
+  pull_request:
+    branches: 'main'
+  workflow_dispath: 
+
+  jobs:
+    test_Actions:
+      runs-on: 'macOs'
+      steps:
+        - uses: actions/checkout@v2
+        - name: hello world step1
+        - run: echo "Hi"
