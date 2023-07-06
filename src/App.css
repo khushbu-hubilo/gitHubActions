@@ -1,0 +1,55 @@
+/*.App {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html, body{
+  height: 100vh;
+}
+
+.cursor{
+  cursor: pointer;
+  border: 1px solid;
+  padding: 5px 10px;
+  background-color: white;
+  font-size: 16px;
+}
+.popover-arrow-container{
+  padding: 5px 10px;
+  background-color: #000;
+  color: #fff;
+}
+.main{
+  height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.coral{
+  border:none;
+  background-color: indigo;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.pink{
+  border:none;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}*/
