@@ -2,12 +2,13 @@ name: hello world
 
 on:
   push:
-    branches: main
+    branches: [ "main" ]
   pull_request:
-    branches: main
+    branches: [ "main" ]
 
 jobs:
-  steps:
-    - uses: actions/checkout@v2
-    - name: hello world step1
-    - run: echo "Hi"
+  test:
+    steps:
+      - uses: actions/checkout@v2
+      - name: hello world step1
+      - run: echo Hi
