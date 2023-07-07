@@ -10,6 +10,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: hello world step1
-      - run: echo Hi
+    - uses: actions/checkout@v2
+    - name: hello world step1
+      run: echo Hi
