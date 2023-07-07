@@ -7,7 +7,7 @@ on:
     branches: main
 
 jobs:
-  runs-on: macOs
+  runs-on: macos-13
   steps:
     - uses: actions/checkout@v2
     - name: hello world step1
