@@ -1,6 +1,3 @@
-import fdPalette from "./fdPalette";
-import fdTypography from "./fdTypography";
-
 const fdComponents = {
   MuiButton: {
     defaultProps: {
