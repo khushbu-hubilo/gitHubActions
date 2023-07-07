@@ -6,10 +6,10 @@ on:
   pull_request:
     branches: main
 
-  jobs:
-    
-      runs-on: macOs
-      steps:
-        - uses: actions/checkout@v2
-        - name: hello world step1
-        - run: echo "Hi"
+jobs:
+  
+    runs-on: macOs
+    steps:
+      - uses: actions/checkout@v2
+      - name: hello world step1
+      - run: echo "Hi"
