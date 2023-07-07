@@ -7,9 +7,8 @@ on:
     branches: main
 
 jobs:
-  
-    runs-on: macOs
-    steps:
-      - uses: actions/checkout@v2
-      - name: hello world step1
-      - run: echo "Hi"
+  runs-on: macOs
+  steps:
+    - uses: actions/checkout@v2
+    - name: hello world step1
+    - run: echo "Hi"
