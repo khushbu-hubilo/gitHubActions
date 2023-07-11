@@ -22,5 +22,5 @@ jobs:
 
     - name: Build
       run: |
-        npm install --legacy-peer-deps
-        npm run build
+       yarn install
+       yarn run build
