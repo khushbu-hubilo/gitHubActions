@@ -52,7 +52,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "publish-dev": "aws s3 sync --size-only --delete build/ s3://portalrewrite/ --acl public-read --cache-control max-age=86400000,public && aws s3 cp build/index.html s3://portalrewrite/ --metadata-directive REPLACE --acl public-read --cache-control max-age=0,must-revalidate,public --content-type 'text/html; charset=utf-8' && aws cloudfront create-invalidation --distribution-id E7SRM7MJIQ5U5 --paths '/*'",
+    "publish-beta": "aws s3 sync --size-only --delete s3://portalrewrite/ s3://fd-prod-portal/ --acl public-read --exclude 'config.json' && aws s3 cp s3://portalrewrite/index.html s3://fd-prod-portal/ && aws cloudfront create-invalidation --distribution-id E3CDR9N5RRWKH --paths '/*'",
+    "publish-prod": "aws s3 sync --size-only --delete s3://portalrewrite/ s3://fd-prod-portal-com/ --acl public-read --exclude 'config.json' && aws s3 cp s3://portalrewrite/index.html s3://fd-prod-portal-com/ && aws cloudfront create-invalidation --distribution-id E2IU4G4IBJUU2Y --paths '/*'",
+    "publish-dev-beta": "aws s3 sync --size-only --delete build/ s3://fd-dev-beta-portal/ --acl public-read --cache-control max-age=86400000,public && aws s3 cp build/index.html s3://fd-dev-beta-portal/ --metadata-directive REPLACE --acl public-read --cache-control max-age=0,must-revalidate,public --content-type 'text/html; charset=utf-8' && aws cloudfront create-invalidation --distribution-id E30XQLH2EMRJ4W --paths '/*'"
   },
   "eslintConfig": {
     "extends": [
